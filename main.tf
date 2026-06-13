@@ -14,6 +14,10 @@ module "compute" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
 subnet_id = module.network.subnet_id
+module "storage" {
+  source              = "./modules/storage"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
 }
 
 
