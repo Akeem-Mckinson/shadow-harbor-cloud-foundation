@@ -8,4 +8,6 @@ output "location" {
 
 output "environment" {
   value = var.environment
+output "subnet_id" {
+  value = module.network.subnet_id
 }
