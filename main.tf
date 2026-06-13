@@ -20,4 +20,3 @@ module "storage" {
   location            = azurerm_resource_group.rg.location
 }
 
-
